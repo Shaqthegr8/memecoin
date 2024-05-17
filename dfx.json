@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "TestToken1_backend": {
+      "candid": "src/TestToken1_backend/TestToken1_backend.did",
+      "package": "TestToken1_backend",
+      "type": "rust"
+    },
+    "TestToken1_frontend": {
+      "dependencies": [
+        "TestToken1_backend"
+      ],
+      "source": [
+        "src/TestToken1_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
